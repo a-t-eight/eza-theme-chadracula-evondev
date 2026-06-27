@@ -199,7 +199,8 @@ def render_preview(ansi_text: str) -> None:
     line_height = 34
     left_padding = 36
     top_padding = 18
-    bg = "#303446"
+    # NvChad/base46 chadracula-evondev: base_30.black
+    bg = "#141423"
 
     lines = [parse_ansi_line(line) for line in ansi_text.splitlines()]
     lines = sanitize_segments(lines, os.environ.get("USER", "user"))
