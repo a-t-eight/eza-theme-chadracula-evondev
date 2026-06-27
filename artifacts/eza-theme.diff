@@ -1,0 +1,251 @@
+--- /Users/andrew/Documents/Codex/2026-06-27/i/outputs/chadracula-evondev-eza-theme.yml	2026-06-27 22:11:10
++++ /Users/andrew/Documents/shell-config/eza/theme.yml	2026-06-27 22:44:49
+@@ -1,15 +1,14 @@
+ colourful: true
+ 
+-# Custom eza theme:
+-# - Palette source: NvChad/base46 chadracula-evondev
+-# - Structural baseline: eza-community/eza-themes
+-# - Extended overrides: curated for common dev files and artifacts
++# chadracula-evondev for eza
++# Palette source: NvChad/base46 chadracula-evondev
++# Structure: eza-community/eza-themes
+ 
+ filekinds:
+   normal: { foreground: "#E9E9F4" }
+   directory: { foreground: "#9A86FD", is_bold: true }
+-  symlink: { foreground: "#2CCCFF" }
+-  pipe: { foreground: "#414171" }
++  symlink: { foreground: "#BD93F9" }
++  pipe: { foreground: "#6060A4" }
+   block_device: { foreground: "#FF5555", is_bold: true }
+   char_device: { foreground: "#FF5555", is_bold: true }
+   socket: { foreground: "#2D2D4E" }
+@@ -23,46 +22,46 @@
+   user_execute_file: { foreground: "#20E3B2", is_bold: true }
+   user_execute_other: { foreground: "#20E3B2" }
+   group_read: { foreground: "#E9E9F4" }
+-  group_write: { foreground: "#F1FA8C" }
++  group_write: { foreground: "#FFB86C" }
+   group_execute: { foreground: "#50FA7B" }
+-  other_read: { foreground: "#92A2D4" }
+-  other_write: { foreground: "#FF6BCB" }
++  other_read: { foreground: "#E9E9F4" }
++  other_write: { foreground: "#FFB86C" }
+   other_execute: { foreground: "#50FA7B" }
+-  special_user_file: { foreground: "#BD93F9" }
+-  special_other: { foreground: "#414171" }
+-  attribute: { foreground: "#7E7EB5" }
++  special_user_file: { foreground: "#FF6BCB" }
++  special_other: { foreground: "#6060A4" }
++  attribute: { foreground: "#E9E9F4" }
+ 
+ size:
+   major: { foreground: "#9A86FD" }
+-  minor: { foreground: "#92A2D4" }
++  minor: { foreground: "#BD93F9" }
+   number_byte: { foreground: "#F8F8F2" }
+-  number_kilo: { foreground: "#E9E9F4" }
+-  number_mega: { foreground: "#8BE9FD" }
++  number_kilo: { foreground: "#E5C697" }
++  number_mega: { foreground: "#62D6E8" }
+   number_giga: { foreground: "#2CCCFF" }
+   number_huge: { foreground: "#FF6BCB" }
+-  unit_byte: { foreground: "#7E7EB5" }
+-  unit_kilo: { foreground: "#92A2D4" }
+-  unit_mega: { foreground: "#8BE9FD" }
++  unit_byte: { foreground: "#6060A4" }
++  unit_kilo: { foreground: "#E5C697" }
++  unit_mega: { foreground: "#62D6E8" }
+   unit_giga: { foreground: "#2CCCFF" }
+   unit_huge: { foreground: "#FFB86C" }
+ 
+ users:
+   user_you: { foreground: "#F8F8F2", is_bold: true }
+   user_root: { foreground: "#FF5555", is_bold: true }
+-  user_other: { foreground: "#BD93F9" }
+-  group_yours: { foreground: "#92A2D4" }
+-  group_other: { foreground: "#7E7EB5" }
++  user_other: { foreground: "#FF6BCB" }
++  group_yours: { foreground: "#E9E9F4" }
++  group_other: { foreground: "#6060A4" }
+   group_root: { foreground: "#FF5555" }
+ 
+ links:
+-  normal: { foreground: "#2CCCFF" }
+-  multi_link_file: { foreground: "#9A86FD" }
++  normal: { foreground: "#BD93F9" }
++  multi_link_file: { foreground: "#FFB86C" }
+ 
+ git:
+   new: { foreground: "#20E3B2" }
+-  modified: { foreground: "#2CCCFF" }
++  modified: { foreground: "#FFB86C" }
+   deleted: { foreground: "#FF5555" }
+-  renamed: { foreground: "#9A86FD" }
++  renamed: { foreground: "#2CCCFF" }
+   typechange: { foreground: "#FF6BCB" }
+   ignored: { foreground: "#6060A4" }
+   conflicted: { foreground: "#FFB86C", is_bold: true }
+@@ -71,31 +70,31 @@
+   branch_main: { foreground: "#F8F8F2" }
+   branch_other: { foreground: "#9A86FD" }
+   git_clean: { foreground: "#20E3B2" }
+-  git_dirty: { foreground: "#FFB86C" }
++  git_dirty: { foreground: "#FF5555" }
+ 
+ security_context:
+   colon: { foreground: "#6060A4" }
+   user: { foreground: "#F8F8F2" }
+   role: { foreground: "#FF6BCB" }
+   typ: { foreground: "#92A2D4" }
+-  range: { foreground: "#BD93F9" }
++  range: { foreground: "#9A86FD" }
+ 
+ file_type:
+   image: { foreground: "#FFB86C" }
+   video: { foreground: "#FF6BCB" }
+-  music: { foreground: "#20E3B2" }
+-  lossless: { foreground: "#50FA7B" }
++  music: { foreground: "#50FA7B" }
++  lossless: { foreground: "#20E3B2" }
+   crypto: { foreground: "#9A86FD" }
+   document: { foreground: "#F8F8F2" }
+   compressed: { foreground: "#BD93F9" }
+   temp: { foreground: "#FF6E6E" }
+-  compiled: { foreground: "#8BE9FD" }
+-  build: { foreground: "#92A2D4" }
+-  source: { foreground: "#2CCCFF" }
++  compiled: { foreground: "#62D6E8" }
++  build: { foreground: "#2CCCFF" }
++  source: { foreground: "#8BE9FD" }
+ 
+ punctuation: { foreground: "#4B4B83" }
+ date: { foreground: "#F1FA8C" }
+-inode: { foreground: "#7E7EB5" }
++inode: { foreground: "#6060A4" }
+ blocks: { foreground: "#6060A4" }
+ header: { foreground: "#F8F8F2", is_bold: true }
+ octal: { foreground: "#20E3B2" }
+@@ -104,7 +103,7 @@
+ symlink_path: { foreground: "#8BE9FD" }
+ control_char: { foreground: "#FFB86C" }
+ broken_symlink: { foreground: "#FF5555", is_bold: true }
+-broken_path_overlay: { foreground: "#414171", is_underline: true }
++broken_path_overlay: { foreground: "#2D2D4E", is_underline: true }
+ 
+ filenames:
+   ".editorconfig":
+@@ -118,11 +117,11 @@
+   ".envrc":
+     filename: { foreground: "#FF6BCB" }
+   ".gitattributes":
+-    filename: { foreground: "#7E7EB5" }
++    filename: { foreground: "#6060A4" }
+   ".gitignore":
+-    filename: { foreground: "#7E7EB5" }
++    filename: { foreground: "#6060A4" }
+   ".prettierignore":
+-    filename: { foreground: "#7E7EB5" }
++    filename: { foreground: "#6060A4" }
+   ".prettierrc":
+     filename: { foreground: "#BD93F9" }
+   ".tmux.conf":
+@@ -134,7 +133,7 @@
+   "Brewfile":
+     filename: { foreground: "#FFB86C" }
+   "Cargo.lock":
+-    filename: { foreground: "#FFB86C" }
++    filename: { foreground: "#E5C697" }
+   "Cargo.toml":
+     filename: { foreground: "#FFB86C", is_bold: true }
+   "Dockerfile":
+@@ -172,7 +171,7 @@
+   "pnpm-lock.yaml":
+     filename: { foreground: "#FFB86C" }
+   "poetry.lock":
+-    filename: { foreground: "#8BE9FD" }
++    filename: { foreground: "#62D6E8" }
+   "pyproject.toml":
+     filename: { foreground: "#F1FA8C", is_bold: true }
+   "requirements.txt":
+@@ -198,7 +197,7 @@
+   "bash":
+     filename: { foreground: "#20E3B2" }
+   "bin":
+-    filename: { foreground: "#8BE9FD" }
++    filename: { foreground: "#62D6E8" }
+   "bz2":
+     filename: { foreground: "#BD93F9" }
+   "c":
+@@ -208,7 +207,7 @@
+   "cfg":
+     filename: { foreground: "#BD93F9" }
+   "class":
+-    filename: { foreground: "#8BE9FD" }
++    filename: { foreground: "#62D6E8" }
+   "conf":
+     filename: { foreground: "#BD93F9" }
+   "cpp":
+@@ -234,7 +233,7 @@
+   "fish":
+     filename: { foreground: "#20E3B2" }
+   "flac":
+-    filename: { foreground: "#50FA7B" }
++    filename: { foreground: "#20E3B2" }
+   "gif":
+     filename: { foreground: "#FFB86C" }
+   "go":
+@@ -278,13 +277,13 @@
+   "less":
+     filename: { foreground: "#2CCCFF" }
+   "lock":
+-    filename: { foreground: "#FFB86C" }
++    filename: { foreground: "#E5C697" }
+   "log":
+     filename: { foreground: "#FF6E6E" }
+   "lua":
+     filename: { foreground: "#9A86FD" }
+   "m4a":
+-    filename: { foreground: "#20E3B2" }
++    filename: { foreground: "#50FA7B" }
+   "md":
+     filename: { foreground: "#F8F8F2", is_bold: true }
+   "mjs":
+@@ -294,15 +293,15 @@
+   "mov":
+     filename: { foreground: "#FF6BCB" }
+   "mp3":
+-    filename: { foreground: "#20E3B2" }
++    filename: { foreground: "#50FA7B" }
+   "mp4":
+     filename: { foreground: "#FF6BCB" }
+   "nix":
+     filename: { foreground: "#50FA7B" }
+   "o":
+-    filename: { foreground: "#8BE9FD" }
++    filename: { foreground: "#62D6E8" }
+   "ogg":
+-    filename: { foreground: "#20E3B2" }
++    filename: { foreground: "#50FA7B" }
+   "old":
+     filename: { foreground: "#FF6E6E" }
+   "orig":
+@@ -334,7 +333,7 @@
+   "sh":
+     filename: { foreground: "#20E3B2" }
+   "so":
+-    filename: { foreground: "#8BE9FD" }
++    filename: { foreground: "#62D6E8" }
+   "sql":
+     filename: { foreground: "#FFB86C" }
+   "svg":
+@@ -360,7 +359,7 @@
+   "txt":
+     filename: { foreground: "#E9E9F4" }
+   "wav":
+-    filename: { foreground: "#50FA7B" }
++    filename: { foreground: "#20E3B2" }
+   "webm":
+     filename: { foreground: "#FF6BCB" }
+   "webp":

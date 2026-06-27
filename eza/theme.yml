@@ -1,0 +1,382 @@
+colourful: true
+
+# chadracula-evondev for eza
+# Palette source: NvChad/base46 chadracula-evondev
+# Structure: eza-community/eza-themes
+
+filekinds:
+  normal: { foreground: "#E9E9F4" }
+  directory: { foreground: "#9A86FD", is_bold: true }
+  symlink: { foreground: "#2CCCFF" }
+  pipe: { foreground: "#6060A4" }
+  block_device: { foreground: "#FF5555", is_bold: true }
+  char_device: { foreground: "#FF5555", is_bold: true }
+  socket: { foreground: "#2D2D4E" }
+  special: { foreground: "#FF6BCB" }
+  executable: { foreground: "#20E3B2", is_bold: true }
+  mount_point: { foreground: "#FFB86C", is_bold: true, is_underline: true }
+
+perms:
+  user_read: { foreground: "#F8F8F2" }
+  user_write: { foreground: "#FF6BCB" }
+  user_execute_file: { foreground: "#20E3B2", is_bold: true }
+  user_execute_other: { foreground: "#20E3B2" }
+  group_read: { foreground: "#E9E9F4" }
+  group_write: { foreground: "#FF6BCB" }
+  group_execute: { foreground: "#50FA7B" }
+  other_read: { foreground: "#E9E9F4" }
+  other_write: { foreground: "#FF6BCB" }
+  other_execute: { foreground: "#50FA7B" }
+  special_user_file: { foreground: "#FF6BCB" }
+  special_other: { foreground: "#6060A4" }
+  attribute: { foreground: "#E9E9F4" }
+
+size:
+  major: { foreground: "#9A86FD" }
+  minor: { foreground: "#BD93F9" }
+  number_byte: { foreground: "#F8F8F2" }
+  number_kilo: { foreground: "#E5C697" }
+  number_mega: { foreground: "#62D6E8" }
+  number_giga: { foreground: "#2CCCFF" }
+  number_huge: { foreground: "#FF6BCB" }
+  unit_byte: { foreground: "#6060A4" }
+  unit_kilo: { foreground: "#E5C697" }
+  unit_mega: { foreground: "#62D6E8" }
+  unit_giga: { foreground: "#2CCCFF" }
+  unit_huge: { foreground: "#FFB86C" }
+
+users:
+  user_you: { foreground: "#F8F8F2", is_bold: true }
+  user_root: { foreground: "#FF5555", is_bold: true }
+  user_other: { foreground: "#FF6BCB" }
+  group_yours: { foreground: "#E9E9F4" }
+  group_other: { foreground: "#6060A4" }
+  group_root: { foreground: "#FF5555" }
+
+links:
+  normal: { foreground: "#BD93F9" }
+  multi_link_file: { foreground: "#FFB86C" }
+
+git:
+  new: { foreground: "#20E3B2" }
+  modified: { foreground: "#FFB86C" }
+  deleted: { foreground: "#FF5555" }
+  renamed: { foreground: "#2CCCFF" }
+  typechange: { foreground: "#FF6BCB" }
+  ignored: { foreground: "#6060A4" }
+  conflicted: { foreground: "#FFB86C", is_bold: true }
+
+git_repo:
+  branch_main: { foreground: "#F8F8F2" }
+  branch_other: { foreground: "#9A86FD" }
+  git_clean: { foreground: "#20E3B2" }
+  git_dirty: { foreground: "#FF5555" }
+
+security_context:
+  colon: { foreground: "#6060A4" }
+  user: { foreground: "#F8F8F2" }
+  role: { foreground: "#FF6BCB" }
+  typ: { foreground: "#92A2D4" }
+  range: { foreground: "#9A86FD" }
+
+file_type:
+  image: { foreground: "#FFB86C" }
+  video: { foreground: "#FF6BCB" }
+  music: { foreground: "#50FA7B" }
+  lossless: { foreground: "#20E3B2" }
+  crypto: { foreground: "#9A86FD" }
+  document: { foreground: "#F8F8F2" }
+  compressed: { foreground: "#BD93F9" }
+  temp: { foreground: "#FF6E6E" }
+  compiled: { foreground: "#62D6E8" }
+  build: { foreground: "#2CCCFF" }
+  source: { foreground: "#8BE9FD" }
+
+punctuation: { foreground: "#4B4B83" }
+date: { foreground: "#F1FA8C" }
+inode: { foreground: "#6060A4" }
+blocks: { foreground: "#6060A4" }
+header: { foreground: "#F8F8F2", is_bold: true }
+octal: { foreground: "#20E3B2" }
+flags: { foreground: "#FF6BCB" }
+
+symlink_path: { foreground: "#8BE9FD" }
+control_char: { foreground: "#FFB86C" }
+broken_symlink: { foreground: "#FF5555", is_bold: true }
+broken_path_overlay: { foreground: "#2D2D4E", is_underline: true }
+
+filenames:
+  ".editorconfig":
+    filename: { foreground: "#BD93F9" }
+  ".env":
+    filename: { foreground: "#FF6E6E", is_bold: true }
+  ".env.example":
+    filename: { foreground: "#FFB86C" }
+  ".env.local":
+    filename: { foreground: "#FF6E6E", is_bold: true }
+  ".envrc":
+    filename: { foreground: "#FF6BCB" }
+  ".gitattributes":
+    filename: { foreground: "#6060A4" }
+  ".gitignore":
+    filename: { foreground: "#6060A4" }
+  ".prettierignore":
+    filename: { foreground: "#6060A4" }
+  ".prettierrc":
+    filename: { foreground: "#BD93F9" }
+  ".tmux.conf":
+    filename: { foreground: "#92A2D4" }
+  ".vimrc":
+    filename: { foreground: "#50FA7B" }
+  ".zshrc":
+    filename: { foreground: "#20E3B2", is_bold: true }
+  "Brewfile":
+    filename: { foreground: "#FFB86C" }
+  "Cargo.lock":
+    filename: { foreground: "#E5C697" }
+  "Cargo.toml":
+    filename: { foreground: "#FFB86C", is_bold: true }
+  "Dockerfile":
+    filename: { foreground: "#8BE9FD", is_bold: true }
+  "Justfile":
+    filename: { foreground: "#9A86FD", is_bold: true }
+  "LICENSE":
+    filename: { foreground: "#F8F8F2", is_bold: true }
+  "Makefile":
+    filename: { foreground: "#9A86FD", is_bold: true }
+  "README":
+    filename: { foreground: "#F8F8F2", is_bold: true }
+  "README.md":
+    filename: { foreground: "#F8F8F2", is_bold: true }
+  "bun.lock":
+    filename: { foreground: "#E5C697" }
+  "bun.lockb":
+    filename: { foreground: "#E5C697" }
+  "compose.yml":
+    filename: { foreground: "#8BE9FD" }
+  "compose.yaml":
+    filename: { foreground: "#8BE9FD" }
+  "docker-compose.yml":
+    filename: { foreground: "#8BE9FD" }
+  "docker-compose.yaml":
+    filename: { foreground: "#8BE9FD" }
+  "go.mod":
+    filename: { foreground: "#2CCCFF", is_bold: true }
+  "go.sum":
+    filename: { foreground: "#92A2D4" }
+  "package-lock.json":
+    filename: { foreground: "#FF6E6E" }
+  "package.json":
+    filename: { foreground: "#20E3B2", is_bold: true }
+  "pnpm-lock.yaml":
+    filename: { foreground: "#FFB86C" }
+  "poetry.lock":
+    filename: { foreground: "#62D6E8" }
+  "pyproject.toml":
+    filename: { foreground: "#F1FA8C", is_bold: true }
+  "requirements.txt":
+    filename: { foreground: "#50FA7B" }
+  "shell.nix":
+    filename: { foreground: "#50FA7B", is_bold: true }
+  "tsconfig.json":
+    filename: { foreground: "#2CCCFF" }
+  "yarn.lock":
+    filename: { foreground: "#92A2D4" }
+
+extensions:
+  "7z":
+    filename: { foreground: "#BD93F9" }
+  "app":
+    filename: { foreground: "#9A86FD", is_bold: true }
+  "astro":
+    filename: { foreground: "#FF6BCB" }
+  "avif":
+    filename: { foreground: "#FFB86C" }
+  "awk":
+    filename: { foreground: "#F1FA8C" }
+  "bash":
+    filename: { foreground: "#20E3B2" }
+  "bin":
+    filename: { foreground: "#62D6E8" }
+  "bz2":
+    filename: { foreground: "#BD93F9" }
+  "c":
+    filename: { foreground: "#8BE9FD" }
+  "cache":
+    filename: { foreground: "#6060A4" }
+  "cfg":
+    filename: { foreground: "#BD93F9" }
+  "class":
+    filename: { foreground: "#62D6E8" }
+  "conf":
+    filename: { foreground: "#BD93F9" }
+  "cpp":
+    filename: { foreground: "#8BE9FD" }
+  "css":
+    filename: { foreground: "#FF6BCB" }
+  "csv":
+    filename: { foreground: "#F1FA8C" }
+  "deb":
+    filename: { foreground: "#FF6BCB", is_bold: true }
+  "diff":
+    filename: { foreground: "#FFB86C" }
+  "dmg":
+    filename: { foreground: "#9A86FD", is_bold: true }
+  "doc":
+    filename: { foreground: "#F8F8F2" }
+  "docx":
+    filename: { foreground: "#F8F8F2" }
+  "env":
+    filename: { foreground: "#FF6E6E" }
+  "erb":
+    filename: { foreground: "#FF6BCB" }
+  "fish":
+    filename: { foreground: "#20E3B2" }
+  "flac":
+    filename: { foreground: "#20E3B2" }
+  "gif":
+    filename: { foreground: "#FFB86C" }
+  "go":
+    filename: { foreground: "#2CCCFF" }
+  "gz":
+    filename: { foreground: "#BD93F9" }
+  "h":
+    filename: { foreground: "#92A2D4" }
+  "heic":
+    filename: { foreground: "#FFB86C" }
+  "hpp":
+    filename: { foreground: "#92A2D4" }
+  "html":
+    filename: { foreground: "#FF6BCB" }
+  "ico":
+    filename: { foreground: "#FFB86C" }
+  "ics":
+    filename: { foreground: "#F1FA8C" }
+  "ini":
+    filename: { foreground: "#BD93F9" }
+  "ipa":
+    filename: { foreground: "#FF6BCB", is_bold: true }
+  "jar":
+    filename: { foreground: "#FF5555" }
+  "java":
+    filename: { foreground: "#FF6E6E" }
+  "jpeg":
+    filename: { foreground: "#FFB86C" }
+  "jpg":
+    filename: { foreground: "#FFB86C" }
+  "js":
+    filename: { foreground: "#F1FA8C" }
+  "json":
+    filename: { foreground: "#BD93F9" }
+  "jsonc":
+    filename: { foreground: "#9A86FD" }
+  "jsx":
+    filename: { foreground: "#8BE9FD" }
+  "kt":
+    filename: { foreground: "#9A86FD" }
+  "less":
+    filename: { foreground: "#2CCCFF" }
+  "lock":
+    filename: { foreground: "#E5C697" }
+  "log":
+    filename: { foreground: "#FF6E6E" }
+  "lua":
+    filename: { foreground: "#9A86FD" }
+  "m4a":
+    filename: { foreground: "#50FA7B" }
+  "md":
+    filename: { foreground: "#F8F8F2", is_bold: true }
+  "mjs":
+    filename: { foreground: "#F1FA8C" }
+  "mkv":
+    filename: { foreground: "#FF6BCB" }
+  "mov":
+    filename: { foreground: "#FF6BCB" }
+  "mp3":
+    filename: { foreground: "#50FA7B" }
+  "mp4":
+    filename: { foreground: "#FF6BCB" }
+  "nix":
+    filename: { foreground: "#50FA7B" }
+  "o":
+    filename: { foreground: "#62D6E8" }
+  "ogg":
+    filename: { foreground: "#50FA7B" }
+  "old":
+    filename: { foreground: "#FF6E6E" }
+  "orig":
+    filename: { foreground: "#FF6E6E" }
+  "patch":
+    filename: { foreground: "#FFB86C" }
+  "pdf":
+    filename: { foreground: "#F8F8F2" }
+  "php":
+    filename: { foreground: "#BD93F9" }
+  "png":
+    filename: { foreground: "#FFB86C" }
+  "ps1":
+    filename: { foreground: "#2CCCFF" }
+  "py":
+    filename: { foreground: "#F1FA8C" }
+  "rar":
+    filename: { foreground: "#BD93F9" }
+  "rb":
+    filename: { foreground: "#FF5555" }
+  "rpm":
+    filename: { foreground: "#FF6BCB", is_bold: true }
+  "rs":
+    filename: { foreground: "#FFB86C" }
+  "sass":
+    filename: { foreground: "#FF6BCB" }
+  "scss":
+    filename: { foreground: "#FF6BCB" }
+  "sh":
+    filename: { foreground: "#20E3B2" }
+  "so":
+    filename: { foreground: "#62D6E8" }
+  "sql":
+    filename: { foreground: "#FFB86C" }
+  "svg":
+    filename: { foreground: "#FF6BCB" }
+  "svelte":
+    filename: { foreground: "#FF6E6E" }
+  "swift":
+    filename: { foreground: "#FF6BCB" }
+  "tar":
+    filename: { foreground: "#BD93F9" }
+  "tif":
+    filename: { foreground: "#FFB86C" }
+  "tiff":
+    filename: { foreground: "#FFB86C" }
+  "tipa":
+    filename: { foreground: "#FF6BCB", is_bold: true }
+  "toml":
+    filename: { foreground: "#BD93F9" }
+  "ts":
+    filename: { foreground: "#2CCCFF" }
+  "tsx":
+    filename: { foreground: "#8BE9FD" }
+  "txt":
+    filename: { foreground: "#E9E9F4" }
+  "wav":
+    filename: { foreground: "#20E3B2" }
+  "webm":
+    filename: { foreground: "#FF6BCB" }
+  "webp":
+    filename: { foreground: "#FFB86C" }
+  "xml":
+    filename: { foreground: "#9A86FD" }
+  "xz":
+    filename: { foreground: "#BD93F9" }
+  "yaml":
+    filename: { foreground: "#9A86FD" }
+  "yml":
+    filename: { foreground: "#9A86FD" }
+  "zig":
+    filename: { foreground: "#FFB86C" }
+  "zip":
+    filename: { foreground: "#BD93F9" }
+  "zsh":
+    filename: { foreground: "#20E3B2" }
+  "zst":
+    filename: { foreground: "#BD93F9" }
